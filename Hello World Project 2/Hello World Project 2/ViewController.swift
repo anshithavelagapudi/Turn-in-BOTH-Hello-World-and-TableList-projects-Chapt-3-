@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 //        let alertController = UIAlertController(title: "Welcome! This is my First App", message: "Hello World...!", preferredStyle: UIAlertController.Style.alert)
 //               alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
 //                present(alertController, animated: true, completion: nil)
-        var icons: [String: String]=["👾":"Alien Monster","👻":"ghost"]
+        var icons: [String: String]=["👾":"Alien Monster","👻":"ghost", "🤓": "smiling face with glasses"]
         
                 
         let selectedButton = sender
@@ -38,6 +38,11 @@ class ViewController: UIViewController {
             
             wordToLookUp = "👻"
             meaning  = icons[wordToLookUp]
+            
+            wordToLookUp = "🤓"
+            meaning = icons[wordToLookUp]
+            
+            
             
             
             let alertController = UIAlertController(title: "Meaning", message: meaning, preferredStyle: UIAlertController.Style.alert)
