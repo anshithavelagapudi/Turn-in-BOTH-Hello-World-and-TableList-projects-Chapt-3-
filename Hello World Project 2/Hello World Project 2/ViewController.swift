@@ -22,13 +22,24 @@ class ViewController: UIViewController {
 //    }
     
     @IBAction func showMessage(sender: UIButton) {
-        let icons: [String: String]=["👾":"Alien Monster"]
-        let wordToLookUp = "👾"
-        let meaning = icons[wordToLookUp]
+//        let alertController = UIAlertController(title: "Welcome! This is my First App", message: "Hello World...!", preferredStyle: UIAlertController.Style.alert)
+//               alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//                present(alertController, animated: true, completion: nil)
+        var icons: [String: String]=["👾":"Alien Monster","👻":"ghost"]
         
+                
         let selectedButton = sender
+
         
         if (selectedButton.titleLabel?.text) != nil {
+            
+            var wordToLookUp = "👾"
+            var meaning = icons[wordToLookUp]
+            
+            wordToLookUp = "👻"
+            meaning  = icons[wordToLookUp]
+            
+            
             let alertController = UIAlertController(title: "Meaning", message: meaning, preferredStyle: UIAlertController.Style.alert)
 
                 alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
