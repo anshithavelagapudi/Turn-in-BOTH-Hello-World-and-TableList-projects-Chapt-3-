@@ -15,42 +15,28 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-//    @IBAction func showMessage(sender: UIButton) {
-//        let alertController = UIAlertController(title: "Welcome! This is my First App", message: "Hello World...!", preferredStyle: UIAlertController.Style.alert)
-//        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-//        present(alertController, animated: true, completion: nil)
-//    }
-    
+
+    var meaning:String?
     @IBAction func showMessage(sender: UIButton) {
         
         let icons: [String : String] = ["👾" : "Alien Monster",
-                                     "👻" : "ghost",
-                                     "🤓" : "smiling face with glasses",
-                                     "🤖" : "robot face"]
+                                     "👻" : "Ghost",
+                                     "🤓" : "Smiling face with glasses",
+                                     "🤖" : "Robot Face"]
         
                 
         let selectedButton = sender
         
-        if (selectedButton.titleLabel?.text) != nil {
-        
-        var wordToLookUp = "👾"
-        var meaning = icons[wordToLookUp]
-
-        wordToLookUp = "👻"
-        meaning  = icons[wordToLookUp]
-
-        wordToLookUp = "🤓"
-        meaning = icons[wordToLookUp]
-        
-        wordToLookUp = "🤖"
-        meaning = icons[wordToLookUp]
+        if let wordToLookUp = selectedButton.titleLabel?.text{
             
-            let alertController = UIAlertController(title: "Meaning", message: meaning, preferredStyle: UIAlertController.Style.alert)
+            meaning = icons[wordToLookUp];
+        }
+            let alertController = UIAlertController(title: "Meanings", message: meaning, preferredStyle: UIAlertController.Style.alert)
 
                 alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 present(alertController, animated: true, completion: nil)
             }
     
     }
-}
+
 
