@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             
             meaning = icons[wordToLookUp];
         }
-            let alertController = UIAlertController(title: "Hello ", message: meaning, preferredStyle: UIAlertController.Style.alert)
+            let alertController = UIAlertController(title: "Meaning", message: meaning, preferredStyle: UIAlertController.Style.alert)
 
                 alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 present(alertController, animated: true, completion: nil)
