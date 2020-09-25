@@ -8,9 +8,6 @@
 
 import UIKit
 
-var icons: [String: String]=["👾":"Alien"]
-var wordToLookUp = "👾"
-var meaning = icons[wordToLookUp]
 
 class ViewController: UIViewController {
 
@@ -18,14 +15,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+//    @IBAction func showMessage(sender: UIButton) {
+//        let alertController = UIAlertController(title: "Welcome! This is my First App", message: "Hello World...!", preferredStyle: UIAlertController.Style.alert)
+//        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+//        present(alertController, animated: true, completion: nil)
+//    }
+    
     @IBAction func showMessage(sender: UIButton) {
-        let alertController = UIAlertController(title: "Welcome! This is my First App", message: "Hello World...!", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertController, animated: true, completion: nil)
-    }
-    
+        let icons: [String: String]=["👾":"Alien Monster"]
+        let wordToLookUp = "👾"
+        let meaning = icons[wordToLookUp]
         
+        let selectedButton = sender
+        
+        if (selectedButton.titleLabel?.text) != nil {
+            let alertController = UIAlertController(title: "Meaning", message: meaning, preferredStyle: UIAlertController.Style.alert)
+
+                alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                present(alertController, animated: true, completion: nil)
+            }
     
-    
+    }
 }
 
