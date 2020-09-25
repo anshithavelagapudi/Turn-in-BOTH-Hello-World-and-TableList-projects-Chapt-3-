@@ -35,10 +35,10 @@ class ViewController: UIViewController {
             
             var wordToLookUp = "👾"
             var meaning = icons[wordToLookUp]
-            
+
             wordToLookUp = "👻"
             meaning  = icons[wordToLookUp]
-            
+
             wordToLookUp = "🤓"
             meaning = icons[wordToLookUp]
             
