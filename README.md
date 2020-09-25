@@ -21,4 +21,14 @@ Building Hello World Button in App
 Building emoji buttons in app(table list)
 -----------------------------
 # Screen 1
-![Screen 1](https://github.com/anshithavelagapudi/Turn-in-BOTH-Hello-World-and-TableList-projects-Chapt-3-/blob/master/Screen%205.png)
+![Screen 1](https://github.com/anshithavelagapudi/Turn-in-BOTH-Hello-World-and-TableList-projects-Chapt-3-/blob/master/Alien.png)
+
+# Screen 2
+![Screen 2](https://github.com/anshithavelagapudi/Turn-in-BOTH-Hello-World-and-TableList-projects-Chapt-3-/blob/master/Ghost.png)
+
+# Screen 3
+![Screen 3](https://github.com/anshithavelagapudi/Turn-in-BOTH-Hello-World-and-TableList-projects-Chapt-3-/blob/master/Smiley.png)
+
+# Screen 4
+![Screen 4](https://github.com/anshithavelagapudi/Turn-in-BOTH-Hello-World-and-TableList-projects-Chapt-3-/blob/master/Robot.png)
+
