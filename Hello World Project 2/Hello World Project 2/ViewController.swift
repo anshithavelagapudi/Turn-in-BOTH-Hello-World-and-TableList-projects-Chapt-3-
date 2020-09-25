@@ -8,6 +8,10 @@
 
 import UIKit
 
+var icons: [String: String]=["👾":"Alien"]
+var wordToLookUp = "👾"
+var meaning = icons[wordToLookUp]
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -19,7 +23,9 @@ class ViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
-
+    
+        
+    
     
 }
 
