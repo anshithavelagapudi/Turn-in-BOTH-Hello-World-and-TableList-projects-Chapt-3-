@@ -30,20 +30,19 @@ class ViewController: UIViewController {
                 
         let selectedButton = sender
 
+        var wordToLookUp = "👾"
+        var meaning = icons[wordToLookUp]
+
+        wordToLookUp = "👻"
+        meaning  = icons[wordToLookUp]
+
+        wordToLookUp = "🤓"
+        meaning = icons[wordToLookUp]
+        
+        wordToLookUp = "🤖"
+        meaning = icons[wordToLookUp]
         
         if (selectedButton.titleLabel?.text) != nil {
-            
-            var wordToLookUp = "👾"
-            var meaning = icons[wordToLookUp]
-
-            wordToLookUp = "👻"
-            meaning  = icons[wordToLookUp]
-
-            wordToLookUp = "🤓"
-            meaning = icons[wordToLookUp]
-            
-            wordToLookUp = "🤖"
-            meaning = icons[wordToLookUp]
             
             
             let alertController = UIAlertController(title: "Meaning", message: meaning, preferredStyle: UIAlertController.Style.alert)
