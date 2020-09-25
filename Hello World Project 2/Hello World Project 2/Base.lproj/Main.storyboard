@@ -21,13 +21,16 @@
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="👾"/>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4B-vF-bbo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5O-93-Eli">
-                                <rect key="frame" x="110" y="547" width="195" height="96"/>
+                                <rect key="frame" x="158" y="577" width="101" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Hello World"/>
                                 <connections>
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w3s-r9-Uby"/>
                                 </connections>
